@@ -16,7 +16,7 @@ namespace MainScripts.Controller
         [SerializeField] private ButtonScript buttonDelete;
         [SerializeField] private TMP_InputField inputField;
 
-        private List<string> _messageList = new();
+        [SerializeField] private List<string> _messageList = new();
         
 
         void Start()
@@ -37,10 +37,7 @@ namespace MainScripts.Controller
             inputField.text = "";
             inputField.Select();
             _messageList.Add(text);
-            for (int i = 0; i < _messageList.Count; i++)
-            {
-                Debug.LogError(_messageList[i]);
-            }
+            
         }
 
         private void SelectMessageInChat()
