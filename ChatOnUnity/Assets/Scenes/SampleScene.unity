@@ -897,7 +897,7 @@ GameObject:
   m_Component:
   - component: {fileID: 581923677}
   m_Layer: 5
-  m_Name: Hood
+  m_Name: HoodView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
