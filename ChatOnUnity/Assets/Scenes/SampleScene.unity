@@ -594,7 +594,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -616,7 +616,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 7
-  m_Spacing: 0
+  m_Spacing: 2
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -722,6 +722,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mainMessageList: []
   hoodView: {fileID: 581923678}
+  myMessagePrefab: {fileID: 6091271246670956618, guid: 9620cb1a4f413d6489f2c0b47275c9db, type: 3}
+  scrollMessage: {fileID: 1345645866}
 --- !u!4 &1768864924
 Transform:
   m_ObjectHideFlags: 0
@@ -773,7 +775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8155722755091816230, guid: fc24803a26cc3b148944688dc1fdb205, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8155722755091816230, guid: fc24803a26cc3b148944688dc1fdb205, type: 3}
       propertyPath: m_AnchorMin.x
@@ -781,7 +783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8155722755091816230, guid: fc24803a26cc3b148944688dc1fdb205, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8155722755091816230, guid: fc24803a26cc3b148944688dc1fdb205, type: 3}
       propertyPath: m_SizeDelta.x
@@ -825,7 +827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8155722755091816230, guid: fc24803a26cc3b148944688dc1fdb205, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 950
       objectReference: {fileID: 0}
     - target: {fileID: 8155722755091816230, guid: fc24803a26cc3b148944688dc1fdb205, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

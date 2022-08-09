@@ -12,10 +12,12 @@ namespace MainScripts.Controller
 {
     public class ScreenController : MonoBehaviour
     { 
-        [SerializeField] private List<string> _mainMessageList = new();
+        [SerializeField] private List<MyMessageView> _mainMessageList = new();
         private List<string> _user1MessageList = new();
         private List<string> _user2MessageList = new();
         [SerializeField] private HoodView hoodView;
+        [SerializeField] private MyMessageView myMessagePrefab;
+        [SerializeField] private VerticalLayoutGroup scrollMessage;
         
         void Start()
         {
@@ -33,9 +35,11 @@ namespace MainScripts.Controller
         {
             var text = hoodView.inputField.text;
             if (string.IsNullOrWhiteSpace(text)) return;
+            var message = Instantiate(myMessagePrefab, scrollMessage.transform);
+            message.messageText.text = text;
             hoodView.inputField.text = "";
             hoodView.inputField.Select();
-            _mainMessageList.Add(text);
+            _mainMessageList.Add(message);
         }
 
         private void SelectMessageInChat()
